@@ -76,18 +76,13 @@ class HomeController @Inject() (studentService: StudentService,
     studentForm.bindFromRequest.fold(
       formWithErrors => BadRequest(html.editForm(id, formWithErrors, programService.options)),
       student => {
-        studentService.update(id, student)
-        Home.flashing("success" -> "Student %s has been updated".format(student.name))
+      /**
+       * Ajouter le code de l'action qui met à jour un étudiant (fonction update de studentService), avec un message de succés.
+       */
+       Home.flashing("success" -> "Student %s has been updated".format(student.name))
       }
     )
   }
-
-  /**
-   * Display the 'new student form'.
-   */
-   def create = Action {
-     Ok(html.createForm(studentForm, programService.options))
-   }
 
   /**
    * Handle the 'new student form' submission.
@@ -96,18 +91,11 @@ class HomeController @Inject() (studentService: StudentService,
     studentForm.bindFromRequest.fold(
       formWithErrors => BadRequest(html.createForm(formWithErrors, programService.options)),
       student => {
-        studentService.insert(student)
-        Home.flashing("success" -> "Student %s has been created".format(student.name))
+      /**
+       * Ajouter le code de l'action qui enregistre le nouveau étudiant, avec un message de succés.
+       */
+       Home.flashing("success" -> "Student %s has been created".format(student.name))
       }
     )
   }
-
-  /**
-   * Handle student deletion.
-   */
-  def delete(id: Long) = Action {
-    studentService.delete(id)
-    Home.flashing("success" -> "Student has been deleted")
-  }
-
 }
