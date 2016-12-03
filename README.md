@@ -49,7 +49,3 @@ requête http post qui fais appel à la fonction list du contrôleur
 
 1- Ajouter dans le controleur, l'action qui gère la suppresion d'un étdudiant à partir de son id.
 2-Ajouter l'action du bouton "Delete this student" requête http post qui fais appel a la fonction delete(id) du contrôleur
-
-# RECHERCHE :
-
-1- Ajouter l'action du bouton Filter by name pour rechercher un étudiant qui fait appel à la fonction list du contrôleur
