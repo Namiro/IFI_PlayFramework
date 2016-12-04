@@ -49,7 +49,7 @@ Un script SQL sera exécuté sur la base de données en mémoire embarquée, cli
 
 **Remarque** : A chaque changement que vous effectuez sur le code de l'application, pas la peine d'éteindre le serveur et de le relancer, il suffit juste d'actualiser son navigateur! La magie du Play Framework et sa compilation à la volée !!!
 
-# Travail à faire :
+# TP :
 
 Pour ce TP, vous êtes donc amenez à implémenter des actions pour ajouter, mettre a jour et supprimer un étudiant:
 
@@ -89,6 +89,7 @@ GET   /clients/:id          controllers.Clients.show(id: Long)
 
 ![alt text](https://github.com/Namiro/IFI_PlayFramework/blob/master/ressources/EditDelete.PNG "editForm.scala.html")
 
+# Travail à faire :
 
 ##### 1. Ajouter un étudiant :
 
