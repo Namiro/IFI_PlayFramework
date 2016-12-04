@@ -77,9 +77,15 @@ GET   /clients/:id          controllers.Clients.show(id: Long)
 
 ## Les vues :
 
+* list.scala.html
+
 ![alt text](https://github.com/Namiro/IFI_PlayFramework/blob/master/ressources/application.PNG "list.scala.html")
 
+* createForm.scala.html
+
 ![alt text](https://github.com/Namiro/IFI_PlayFramework/blob/master/ressources/add.PNG "createForm.scala.html")
+
+* editForm.scala.html
 
 ![alt text](https://github.com/Namiro/IFI_PlayFramework/blob/master/ressources/EditDelete.PNG "editForm.scala.html")
 
