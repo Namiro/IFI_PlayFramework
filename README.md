@@ -16,36 +16,44 @@ Celle ci va lancer notre serveur sbt. (ctrl+D pour éteindre)
 
 Accéder ensuite à l'url :
 
-`http://localhost:9000/`
+[http://localhost:9000/]
 
 An SQL script will be run on your database, cliquer sur "Apply this script now!" afin de peupler notre base de données qu'on utilisera dans ce tp
 
-# ADD A STUDENT :
-1-Créer dans le controleur l'action create qui affiche le formulaire de création. ( prend en paramètre studentForm et programService.options)
+## ADD A STUDENT :
 
-2- Ajouter l'action du bouton "add a new student" qui va vous envoyer au formulaire de création :
-requête http  get qui fais appel à la fonction create du contrôleur
+1. Créer dans le controleur l'action "create" qui s'occupe d'afficher le formulaire d'ajout "createForm.scala.html" qui prend en paramètres studentForm et programService.options .
 
-3-Compléter la fonction save du contrôleur pour enregistrer un nouveau étudiant, avec un message de succés.
+2. Ajouter le chemin de cette action dans le fichier routes (c'est une requête http GET) .
 
-4-Ajouter l'action du button "Create this student" qui crée l’étudiant :
-requête http post qui fais appel à la fonction save du contrôleur
+3. Ajouter cette action au boutton "Add a new student" dans la view "list.scala.html"
 
-5-Ajouter l'action du bouton "Cancel" qui nous retourne vers la liste des étudiants :
-requête http post qui fais appel à la fonction list du contrôleur
+4. Compléter l'action save du controleur afin de pouvoir enregistrer un nouveau étudiant (utiliser la fonction insert du studentService)
 
-# EDIT AN EXISTING STUDENT :
+5. Ajouter le chemin de cette action dans le fichier routes (c'est une requête http POST) .
 
-1- Ajouter la requête http get qui fais appel a l'action edit du contrôleur quand on clique sur un étudiant de la liste (affiche le formulaire d’édition)
+6. Ajouter cette action au boutton "Create this student" dans la view "createForm.scala.html"
 
-2-Compléter la fonction update du contrôleur qui met à jour un étudiant (fonction update de studentService), avec un message de succés.
+7. Ajouter l'action du bouton "Cancel" qui nous retourne vers la liste des étudiants dans la view "createForm.scala.html".
 
-3- Ajouter l'action du bouton "Save this student" requête http post qui fait appel à la fonction save du contrôleur.
+## EDIT A STUDENT :
 
-4-Ajouter l'action du bouton "Cancel" qui nous retourne vers la liste des étudiants :
-requête http post qui fais appel à la fonction list du contrôleur
+1. Ajouter le chemin de l'action edit dans le fichier routes (c'est une requête http GET) .
 
-# DELETE A STUDENT :
+2. Ajouter le lien vers cette action dans la view "list.scala.html" pour pouvoir afficher le formulaire d'édition quand on clique sur le nom d'un étudiant.
 
-1- Ajouter dans le controleur, l'action qui gère la suppresion d'un étdudiant à partir de son id.
-2-Ajouter l'action du bouton "Delete this student" requête http post qui fais appel a la fonction delete(id) du contrôleur
+3. Compléter l'action update du controleur afin de pouvoir mettre à jour un étudiant (utiliser la fonction update du studentService)
+
+4. Ajouter le chemin de l'action update dans le fichier routes (c'est une requête http POST) .
+
+5. Ajouter cette action au boutton "Save this student" dans la view "editForm.scala.html"
+
+6. Ajouter l'action du bouton "Cancel" qui nous retourne vers la liste des étudiants dans la view "editForm.scala.html".
+
+## DELETE A STUDENT :
+
+1. Créer dans le controleur l'action "delete" qui s'occupe de supprimer un étudiant(utiliser la fonction delete de studentService)
+
+2. Ajouter le chemin de l'action delete dans le fichier routes (c'est une requête http POST) .
+
+3. Ajouter cette action au boutton "Delete this student" dans la view "editForm.scala.html"
