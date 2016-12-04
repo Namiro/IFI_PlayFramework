@@ -1,16 +1,33 @@
 # IFI PlayFramework
 
-Pour commencer, clonez ce projet à l'adresse suivante sur votre poste :
+Pour commencer, clonez ce projet sur votre poste :
+```
+mkdir -p $HOME/ifiplayframework
+cd $HOME/ifiplayframework
+git clone https://github.com/Namiro/IFI_PlayFramework.git
+cd $HOME/ifiplayframework/IFI_PlayFramework
+```
+
+## TP : Application CRUD
+  Il s'agit d'une application Play classique CRUD en Scala, soutenue par une base de données JDBC en mémoire. Elle utilise ANORM pour l'accès à la Base de Données, pagination classique, et l'intégration avec un framework CSS (Twitter Bootstrap).
+
+  Ce tp consiste à implémenter les actions Create, Update et Delete.
+
+Votre but est d'appeler les méthodes des services pour pouvoir implémenter ces actions.
+
+Pour vous faciliter les choses, une base de début est fourni.
+
 
 # Builder et lancer l'application :
 
 Pour cela, il suffit de taper la commande
-
-`./sbt run`
-
-si sous windows tapez
-
-`sbt run`
+```
+.\sbt-dist\bin\sbt.bat run
+```
+ou
+```
+./sbt run
+```
 
 Celle ci va lancer notre serveur sbt. (ctrl+D pour éteindre)
 
@@ -20,7 +37,8 @@ Accéder ensuite à l'url :
 
 An SQL script will be run on your database, cliquer sur "Apply this script now!" afin de peupler notre base de données qu'on utilisera dans ce tp
 
-## ADD A STUDENT :
+
+###### 1. Ajouter un étudiant :
 
 1. Créer dans le controleur l'action "create" qui s'occupe d'afficher le formulaire d'ajout "createForm.scala.html" qui prend en paramètres studentForm et programService.options .
 
@@ -36,7 +54,7 @@ An SQL script will be run on your database, cliquer sur "Apply this script now!"
 
 7. Ajouter l'action du bouton "Cancel" qui nous retourne vers la liste des étudiants dans la view "createForm.scala.html".
 
-## EDIT A STUDENT :
+###### 2. Mettre à jour un étudiant :
 
 1. Ajouter le chemin de l'action edit dans le fichier routes (c'est une requête http GET) .
 
@@ -50,7 +68,7 @@ An SQL script will be run on your database, cliquer sur "Apply this script now!"
 
 6. Ajouter l'action du bouton "Cancel" qui nous retourne vers la liste des étudiants dans la view "editForm.scala.html".
 
-## DELETE A STUDENT :
+###### 3. Supprimer un étudiant :
 
 1. Créer dans le controleur l'action "delete" qui s'occupe de supprimer un étudiant(utiliser la fonction delete de studentService)
 
