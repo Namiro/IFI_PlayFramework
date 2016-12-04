@@ -123,7 +123,7 @@ GET   /clients/:id          controllers.Clients.show(id: Long)
 
 ##### 3. Supprimer un étudiant :
 
-1. Créer dans le contrôleur l'action **delete** qui s'occupe de supprimer un étudiant.
+1. Créer dans le contrôleur l'action **delete** qui s'occupe de supprimer un étudiant.(Ne pas oublier la redirection avec Home.flashing(...))
 
 2. Ajouter le chemin de l'action delete dans le fichier **routes**.
 
