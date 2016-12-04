@@ -74,6 +74,16 @@ GET   /clients/:id          controllers.Clients.show(id: Long)
 <div>...</div>
 }
 ```
+
+## Les vues :
+
+![alt text](https://github.com/Namiro/IFI_PlayFramework/ressources/application.png "list.scala.html")
+
+![alt text](https://github.com/Namiro/IFI_PlayFramework/ressources/add.png "createForm.scala.html")
+
+![alt text](https://github.com/Namiro/IFI_PlayFramework/ressources/EditDelete.png "editForm.scala.html")
+
+
 ##### 1. Ajouter un étudiant :
 
 1. Créer dans le contrôleur l'action **create** qui s'occupe d'afficher le formulaire d'ajout qui prend en paramètres studentForm et programService.options .
