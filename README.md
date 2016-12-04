@@ -12,6 +12,7 @@ cd $HOME/ifiplayframework/IFI_PlayFramework
   Il s'agit d'une application **Play** classique CRUD en **Scala**, soutenue par une base de données JDBC en mémoire. Elle utilise **ANORM** pour l'accès à la Base de Données, pagination classique, et l'intégration avec un framework CSS (Play Bootstrap).
 
   [Anorm](https://cchantep.github.io/anorm/) : Play comprend une couche d'accès aux données simple appelée Anorm qui utilise le langage SQL pour interagir avec la base de données et fournit une API pour analyser et transformer les ensembles de données résultants.
+
   [Play-Bootstrap](https://adrianhurt.github.io/play-bootstrap/) : Une collection d'input helpers et de field constructors pour PlayFramework utiles pour interpréter du code HTML avec Bootstrap.
 
 Ce tp consiste à implémenter les actions Create, Read, Update et Delete.
