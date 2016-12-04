@@ -77,11 +77,11 @@ GET   /clients/:id          controllers.Clients.show(id: Long)
 
 ## Les vues :
 
-![alt text](https://github.com/Namiro/IFI_PlayFramework/ressources/application.png "list.scala.html")
+![alt text](https://github.com/Namiro/IFI_PlayFramework/blob/master/ressources/application.PNG "list.scala.html")
 
-![alt text](https://github.com/Namiro/IFI_PlayFramework/ressources/add.png "createForm.scala.html")
+![alt text](https://github.com/Namiro/IFI_PlayFramework/blob/master/ressources/add.PNG "createForm.scala.html")
 
-![alt text](https://github.com/Namiro/IFI_PlayFramework/ressources/EditDelete.png "editForm.scala.html")
+![alt text](https://github.com/Namiro/IFI_PlayFramework/blob/master/ressources/EditDelete.PNG "editForm.scala.html")
 
 
 ##### 1. Ajouter un étudiant :
