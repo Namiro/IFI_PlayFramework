@@ -6,6 +6,7 @@ mkdir -p $HOME/ifiplayframework
 cd $HOME/ifiplayframework
 git clone https://github.com/Namiro/IFI_PlayFramework.git
 cd $HOME/ifiplayframework/IFI_PlayFramework
+chmod u+x sbt
 ```
 
 ## TP : Application CRUD
