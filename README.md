@@ -34,10 +34,6 @@ Pour vous faciliter les choses, une base de l'application est fourni.
 
 Pour cela, il suffit de taper la commande
 ```
-.\sbt-dist\bin\sbt.bat run
-```
-ou
-```
 ./sbt run
 ```
 
