@@ -7,6 +7,7 @@ cd $HOME/ifiplayframework
 git clone https://github.com/Namiro/IFI_PlayFramework.git
 cd $HOME/ifiplayframework/IFI_PlayFramework
 chmod u+x sbt
+chmod u+x sbt-dist/bin/sbt
 ```
 
 ## TP : Application CRUD
